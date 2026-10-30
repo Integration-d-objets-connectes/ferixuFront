@@ -1,6 +1,6 @@
 from nicegui import ui
 
-from composants.carte_mesure import CarteMesure
+from composants import CarteMesure
 from layout import mise_en_page
 from models.donnees_exemple import MESURES
 
