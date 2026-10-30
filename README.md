@@ -28,6 +28,8 @@ Cette structure suit les [notes du cours](https://cours-5.gitbook.io/420-5p0-int
 
 ## Modèles de données
 
+Les modèles sont accessibles avec `from models import Plante, Lumiere, TemperatureHumidite, Arrosage, Utilisateur`, comme dans les exemples du cours.
+
 Les modèles dans `models/` décrivent les champs prévus pour l'échange avec l'API. Ce sont des classes Pydantic `BaseModel`, comme le modèle `Drone` de l'exemple du cours. Elles sont indépendantes de l'interface; leur présence ne branche pas encore les pages à l'API. Les pages affichent toujours les données fictives de `donnees_exemple.py`.
 
 | Modèle | Rôle et utilisation prévue |
