@@ -1,8 +1,7 @@
-from dataclasses import dataclass
+from pydantic import BaseModel
 
 
-@dataclass
-class Arrosage:
+class Arrosage(BaseModel):
     """Un événement d'arrosage, automatique ou manuel."""
 
     auto: bool

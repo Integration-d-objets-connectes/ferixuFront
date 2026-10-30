@@ -1,10 +1,9 @@
-from dataclasses import dataclass, field
+from pydantic import BaseModel, Field
 
 
-@dataclass
-class Utilisateur:
+class Utilisateur(BaseModel):
     """Données d'utilisateur prévues pour la future authentification."""
 
     id: int
     nom: str
-    passwd: str = field(repr=False)
+    passwd: str = Field(repr=False)

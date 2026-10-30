@@ -1,8 +1,7 @@
-from dataclasses import dataclass
+from pydantic import BaseModel
 
 
-@dataclass
-class Lumiere:
+class Lumiere(BaseModel):
     """Une mesure de lumière de l'historique d'une plante."""
 
     lux: float

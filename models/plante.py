@@ -1,8 +1,7 @@
-from dataclasses import dataclass
+from pydantic import BaseModel
 
 
-@dataclass
-class Plante:
+class Plante(BaseModel):
     """État et paramètres d'une plante associés à un utilisateur."""
 
     id: int

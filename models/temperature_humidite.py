@@ -1,8 +1,7 @@
-from dataclasses import dataclass
+from pydantic import BaseModel
 
 
-@dataclass
-class TemperatureHumidite:
+class TemperatureHumidite(BaseModel):
     """Une mesure de température et d'humidité brute de l'historique."""
 
     temperature_c: float
