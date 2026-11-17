@@ -5,8 +5,10 @@ from models.donnees_exemple import HEURES, HUMIDITE, LUMINOSITE, TEMPERATURE
 
 
 def creer_page():
+    """Enregistre la page présentant l'historique fictif des mesures."""
     @ui.page('/historique')
     def page():
+        """Affiche les graphiques d'exemple de sol et de luminosité."""
         with mise_en_page('Historique'):
             with ui.element('section').classes('section'):
                 ui.label('Historique des mesures').classes('section-heading section-title')

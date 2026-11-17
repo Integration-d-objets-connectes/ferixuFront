@@ -4,7 +4,13 @@ from models.donnees_exemple import Mesure
 
 
 class CarteMesure(ui.card):
+    """Affiche une mesure et sa description dans une carte."""
     def __init__(self, mesure: Mesure) -> None:
+        """Construit la carte à partir des données de la mesure.
+
+        Args:
+            mesure (Mesure): Données de la mesure à afficher.
+        """
         super().__init__()
         self.classes('surface metric')
         with self:

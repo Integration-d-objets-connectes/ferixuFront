@@ -6,8 +6,10 @@ from models.donnees_exemple import MESURES
 
 
 def creer_page():
+    """Enregistre la page de vue d'ensemble de la maquette."""
     @ui.page('/')
     def page():
+        """Affiche les mesures et l'état fictifs de la plante."""
         with mise_en_page('Vue d’ensemble'):
             with ui.element('section').classes('section'):
                 with ui.row().classes('section-title'):

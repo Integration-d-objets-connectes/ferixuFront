@@ -4,8 +4,10 @@ from layout import mise_en_page
 
 
 def creer_page():
+    """Enregistre la page de paramètres de la maquette."""
     @ui.page('/parametres')
     def page():
+        """Affiche les paramètres et commandes de démonstration désactivés."""
         with mise_en_page('Paramètres'):
             with ui.element('div').classes('two section'):
                 with ui.card().classes('surface feature'):

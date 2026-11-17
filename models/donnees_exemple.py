@@ -3,6 +3,7 @@ from pydantic import BaseModel
 
 
 class Mesure(BaseModel):
+    """Décrit une mesure affichée dans la maquette."""
     titre: str
     icone: str
     valeur: str

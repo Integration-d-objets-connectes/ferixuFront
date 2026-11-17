@@ -7,6 +7,14 @@ ROUTES = {'Vue d’ensemble': '/', 'Historique': '/historique', 'Paramètres': '
 
 @contextmanager
 def mise_en_page(page_active: str):
+    """Fournit la navigation et la structure communes autour du contenu de la page.
+
+    Args:
+        page_active (str): Nom de la page sélectionnée dans la navigation.
+
+    Yields:
+        None: Emplacement où construire le contenu de la page.
+    """
     ui.page_title(f'Pousse · {page_active}')
     ui.add_head_html('<link rel="stylesheet" href="/assets/style.css">')
     with ui.element('aside').classes('sidebar'):
